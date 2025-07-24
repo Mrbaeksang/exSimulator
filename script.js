@@ -44,7 +44,8 @@ class ExGirlfriendSimulator {
     
     getCurrentKST() {
         const now = new Date();
-        const kst = new Date(now.getTime() + (9 * 60 * 60 * 1000)); // UTC+9
+        // 한국 시간대로 직접 변환
+        const kst = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Seoul"}));
         
         const year = kst.getFullYear();
         const month = kst.getMonth() + 1;
