@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "python -m http.server 3000",
-    "build": "mkdir -p public && cp -r * public/ || (md public 2>nul & xcopy /E /I /Y . public\\ & del public\\public /Q)",
+    "build": "echo 'Static site ready'",
     "start": "python -m http.server 8080"
   },
   "keywords": [
