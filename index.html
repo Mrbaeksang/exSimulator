@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전여친 붙잡기 시뮬레이션</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">💔 전여친 붙잡기 시뮬레이션</h1>
+            <p class="subtitle">과연 당신은 전여친을 다시 붙잡을 수 있을까요?</p>
+        </header>
+
+        <main class="game-area">
+            <div class="game-screen" id="gameScreen">
+                <div class="character-area">
+                    <div class="character ex-girlfriend" id="exGirlfriend">
+                        <div class="character-avatar">👩‍💼</div>
+                        <div class="character-name">주현</div>
+                        <div class="mood-indicator" id="moodIndicator">😐</div>
+                    </div>
+                    <div class="character player">
+                        <div class="character-avatar">🧔‍♂️</div>
+                        <div class="character-name">나</div>
+                    </div>
+                </div>
+
+                <div class="status-bar">
+                    <div class="status-item">
+                        <span class="status-label">호감도</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="affectionBar" style="width: 20%"></div>
+                        </div>
+                        <span class="status-value" id="affectionValue">20/100</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">신뢰도</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill trust" id="trustBar" style="width: 10%"></div>
+                        </div>
+                        <span class="status-value" id="trustValue">10/100</span>
+                    </div>
+                </div>
+
+                <div class="dialogue-box" id="dialogueBox">
+                    <p class="dialogue-text" id="dialogueText">
+                        게임을 시작하려면 아래에서 선택하세요...
+                    </p>
+                </div>
+
+                <div class="choices" id="choices">
+                    <button class="choice-btn" data-choice="1">
+                        "미안해... 다시 한 번 기회를 줄 수 없을까?"
+                    </button>
+                    <button class="choice-btn" data-choice="2">
+                        "그냥... 네가 보고 싶었어"
+                    </button>
+                    <button class="choice-btn" data-choice="3">
+                        "우리 좋았던 시간들을 생각해봐"
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-over-screen hidden" id="gameOverScreen">
+                <div class="result-content">
+                    <h2 class="result-title" id="resultTitle"></h2>
+                    <div class="result-image" id="resultImage"></div>
+                    <p class="result-text" id="resultText"></p>
+                    <button class="restart-btn" id="restartBtn">다시 시도하기</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>💡 팁: 상대의 기분을 잘 살피고 신중하게 선택하세요!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

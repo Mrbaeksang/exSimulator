@@ -1,0 +1,27 @@
+{
+  "name": "ex-girlfriend-simulator",
+  "version": "1.0.0",
+  "description": "전여친 붙잡기 시뮬레이션 게임",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": [
+    "simulation",
+    "game",
+    "korean",
+    "relationship",
+    "interactive"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mrbaeksang/exSimulator"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
